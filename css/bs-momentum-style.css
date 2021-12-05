@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url(/css/bs-momentum-greeting.css);
+
+:root {
+  --black: #091b26;
+  --dark-jade: #3b5159;
+  --ivory: #d9d6c7;
+  --beige: #bfbdb4;
+  --didot: "GFS Didot", serif;
+  --mont: "Montserrat", sans-serif;
+  --noto: "Noto Sans KR", sans-serif;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+.hidden {
+  opacity: 0%;
+  display: none;
+}
+
+.saturation {
+  filter: saturate(0);
+  transition: all 1s ease-in-out;
+}
+
+#background img {
+  position: fixed;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bs-momentum-style.css" />
+    <title>BLVCK SWAN MOMENTUM</title>
+  </head>
+  <body>
+    <div id="background">
+      <img class="saturation" src="img/01.jpeg" />
+    </div>
+    <div class="top-bar">
+      <div class="top-bar__column"></div>
+      <div class="top-bar__column"></div>
+      <div class="top-bar__column"></div>
+    </div>
+    <main class="main-container">
+      <form id="login-form">
+        <input
+          id="login-input"
+          type="text"
+          placeholder="이름 혹은 별명을 입력하세요."
+          autocomplete="off"
+          minlength="2"
+          maxlength="12"
+        />
+      </form>
+      <div class="hidden greeting-box">
+        <div class="greeting-box__container">
+          <h2>오늘도 힘내자,</h2>
+          <h1 id="greeting">a</h1>
+        </div>
+      </div>
+    </main>
+    <script src="js/bs-momentum-login.js"></script>
+  </body>
+</html>
