@@ -1,3 +1,4 @@
+const mainContainer = document.querySelector(".main-container");
 const backGround = document.querySelector("#background img");
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-input");
@@ -19,14 +20,13 @@ function onLogin(event) {
 
 function paintingMain(typename) {
   username.innerText = typename;
-  greetingBox.classList.remove(HIDDEN_CLASS);
-  backGround.classList.remove("saturation");
+  backGround.classList.add("saturation");
+  mainContainer.classList.remove(HIDDEN_CLASS);
 }
 
-if (savedUsername !== null) {
-  loginForm.classList.add(HIDDEN_CLASS);
-  paintingMain(savedUsername);
-} else {
+if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASS);
   loginForm.addEventListener("submit", onLogin);
+} else {
+  paintingMain(savedUsername);
 }

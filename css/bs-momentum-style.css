@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import "reset.css";
 
-@import url(/css/bs-momentum-greeting.css);
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import "bs-momentum-greeting.css";
+@import "bs-momentum-clock.css";
+@import "bs-momentum-sentence.css";
 
 :root {
   --black: #091b26;
-  --dark-jade: #3b5159;
+  --dark-jade: #2d595c;
   --ivory: #d9d6c7;
   --beige: #bfbdb4;
   --didot: "GFS Didot", serif;
@@ -16,6 +19,15 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
+.legend-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hidden {
   opacity: 0%;
   display: none;
@@ -23,7 +35,7 @@ body {
 
 .saturation {
   filter: saturate(0);
-  transition: all 1s ease-in-out;
+  animation: saturation 2s ease-in-out forwards;
 }
 
 #background img {
@@ -33,12 +45,14 @@ body {
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: saturate(0);
 }
 
-.main-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@keyframes saturation {
+  from {
+    filter: saturate(0);
+  }
+  to {
+    filter: saturate(1);
+  }
 }

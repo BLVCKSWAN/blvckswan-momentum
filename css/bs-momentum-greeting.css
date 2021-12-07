@@ -3,7 +3,7 @@
   font-size: 35px;
   width: 30vw;
   padding: 12px 35px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   border: none;
   border-bottom: 1px solid var(--ivory);
   color: var(--ivory);
@@ -26,20 +26,41 @@
   color: transparent;
 }
 
+.main-container {
+  animation: dissolve 1s ease-in-out forwards;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+}
+
 .greeting-box__container {
-  opacity: 100%;
+  opacity: 0%;
   display: flex;
   align-items: center;
   font-family: var(--noto);
+  animation: dissolve 1s ease-in-out forwards;
 }
 
 .greeting-box h2 {
   font-size: 30px;
   color: var(--beige);
   margin-right: 15px;
+  text-shadow: 1px 1px 5px black;
 }
 
 #greeting {
+  font-family: var(--didot);
   font-size: 55px;
   color: var(--ivory);
+}
+
+@keyframes dissolve {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }

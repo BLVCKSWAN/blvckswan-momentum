@@ -1,0 +1,26 @@
+.clock {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.clock__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clock__time {
+  font-family: var(--noto);
+  font-size: 120px;
+  font-weight: 600;
+  color: var(--dark-jade);
+  text-shadow: 1px 1px 10px black;
+}
+
+.clock__day {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: var(--noto);
+  color: var(--beige);
+}
