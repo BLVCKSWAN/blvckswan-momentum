@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import "bs-momentum-greeting.css";
 @import "bs-momentum-clock.css";
-@import "bs-momentum-sentence.css";
+@import "bs-momentum-top-bar.css";
+@import "bs-momentum-todo.css";
 
 :root {
   --black: #091b26;
@@ -26,6 +27,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .hidden {

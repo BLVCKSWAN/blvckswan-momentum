@@ -25,9 +25,15 @@
       <main class="main-container hidden">
         <div class="top-bar">
           <div class="top-bar__column"></div>
-          <div class="top-bar__column"></div>
+          <div class="top-bar__column">
+            <div class="sentence-container">
+              <h3 class="sentence"></h3>
+              <span class="source"></span>
+            </div>
+          </div>
           <div class="top-bar__column"></div>
         </div>
+
         <div class="hero-container">
           <div class="clock">
             <div class="clock__container">
@@ -41,11 +47,24 @@
               <h1 id="greeting"></h1>
             </div>
           </div>
+          <div class="todo-list">
+            <form class="todo-list__form">
+              <h2 class="todo-list__title">목표와 계획</h2>
+              <input class="todo-list__input" />
+            </form>
+            <ul class="todo-list__list"></ul>
+          </div>
         </div>
       </main>
     </div>
 
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/bs-momentum-login.js"></script>
     <script src="js/bs-momentum-clock.js"></script>
+    <script src="js/bs-momentum-sentence.js"></script>
+    <script src="js/bs-momentum-todo.js"></script>
   </body>
 </html>
