@@ -30,11 +30,6 @@ body {
   position: relative;
 }
 
-.hidden {
-  opacity: 0%;
-  display: none;
-}
-
 .saturation {
   filter: saturate(0);
   animation: saturation 2s ease-in-out forwards;
@@ -50,6 +45,25 @@ body {
   filter: saturate(0);
 }
 
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: dissolve 2s ease-in-out forwards;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 @keyframes saturation {
   from {
     filter: saturate(0);
@@ -57,4 +71,17 @@ body {
   to {
     filter: saturate(1);
   }
+}
+
+@keyframes dissolve {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.hidden {
+  display: none;
 }

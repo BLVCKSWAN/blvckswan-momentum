@@ -1,0 +1,82 @@
+.todo-list {
+  padding: 15px 15px;
+  width: 30%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+}
+
+.todo-list__form {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list__title {
+  margin-right: 15px;
+  font-family: var(--didot);
+  font-size: 25px;
+  color: var(--beige);
+  text-shadow: 1px 1px 5px black;
+}
+
+.todo-list__input {
+  width: 50%;
+  font-size: 15px;
+  font-family: var(--noto);
+  color: var(--ivory);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--beige);
+}
+
+.todo-list__wrapper {
+  height: 25vh;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+.todo-list__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border-radius: 8px;
+}
+
+.todolist__item {
+  margin: 5px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  color: var(--ivory);
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  animation: dissolve 2s ease-in-out forwards;
+}
+
+.todolist__item span {
+  font-family: var(--noto);
+  line-height: 0px;
+  color: inherit;
+  margin-right: 5px;
+}
+
+.todolist__item i {
+  color: inherit;
+}
+
+.todolist__item:hover {
+  background-color: var(--ivory);
+  color: var(--black);
+}
+
+.todolist__item i:hover {
+  cursor: pointer;
+}

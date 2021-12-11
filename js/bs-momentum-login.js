@@ -10,6 +10,13 @@ const HIDDEN_CLASS = "hidden";
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
+if (savedUsername === null) {
+  loginForm.classList.remove(HIDDEN_CLASS);
+  loginForm.addEventListener("submit", onLogin);
+} else {
+  paintingMain(savedUsername);
+}
+
 function onLogin(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASS);
@@ -22,11 +29,4 @@ function paintingMain(typename) {
   username.innerText = typename;
   backGround.classList.add("saturation");
   mainContainer.classList.remove(HIDDEN_CLASS);
-}
-
-if (savedUsername === null) {
-  loginForm.classList.remove(HIDDEN_CLASS);
-  loginForm.addEventListener("submit", onLogin);
-} else {
-  paintingMain(savedUsername);
 }
